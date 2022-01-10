@@ -3,12 +3,12 @@ package com.uni;
 public class Felder {
     private int Id;
     private String Unternehmensname;
-    private String Unternehmensgrosse;
+    private Unternehme Unternehmensgrosse;
     private int AnzahlMitarbeiter;
     private int EinkomenVonKunde;
     private String Ort;
 
-    public Felder(int id, String unternehmensname, String unternehmensgrosse, int anzahlMitarbeiter, int einkomenVonKunde, String ort) {
+    public Felder(int id, String unternehmensname, Unternehme unternehmensgrosse, int anzahlMitarbeiter, int einkomenVonKunde, String ort) {
         Id = id;
         Unternehmensname = unternehmensname;
         Unternehmensgrosse = unternehmensgrosse;
@@ -34,11 +34,11 @@ public class Felder {
         Unternehmensname = unternehmensname;
     }
 
-    public String getUnternehmensgrosse() {
+    public Unternehme getUnternehmensgrosse() {
         return Unternehmensgrosse;
     }
 
-    public void setUnternehmensgrosse(String unternehmensgrosse) {
+    public void setUnternehmensgrosse(Unternehme unternehmensgrosse) {
         Unternehmensgrosse = unternehmensgrosse;
     }
 

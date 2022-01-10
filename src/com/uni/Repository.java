@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class Repository {
 
-    /*
+
     public List<Felder> readFromFile(String fileName, String character) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new FileReader(fileName));
         String line = bufferedReader.readLine();
@@ -16,7 +16,7 @@ public class Repository {
         List<Felder> listeFelder = new ArrayList<>();
         while (line != null) {
             attributes = line.split(character);
-            felder = new Felder(attributes[0], attributes[1], attributes[2], attributes[3]);
+            felder = new Felder(attributes[0], attributes[1], Unternehme.valueOf(attributes[2]), attributes[3], attributes[4]), attributes[5], attributes[6]);
             listeFelder.add(felder);
 
             line = bufferedReader.readLine();
@@ -25,23 +25,8 @@ public class Repository {
         return listeFelder;
     }
 
-     */
-    public class ReadFile {
-        public static void main(String[] args) {
-            try {
-                File myObj = new File("filename.txt");
-                Scanner myReader = new Scanner(myObj);
-                while (myReader.hasNextLine()) {
-                    String data = myReader.nextLine();
-                    System.out.println(data);
-                }
-                myReader.close();
-            } catch (FileNotFoundException e) {
-                System.out.println("An error occurred.");
-                e.printStackTrace();
-            }
-        }
-    }
+
+
 
     public void writeToFile(String fileName, List<Felder> liste, String character) throws IOException {
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(fileName));

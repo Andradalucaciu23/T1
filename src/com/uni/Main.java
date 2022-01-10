@@ -15,7 +15,7 @@ public class Main {
         Service service = new Service();
 
         try {
-            List<Felder> listeFelder = repo.ReadFile("C:\\Users\\User\\Desktop\\MAP\\Labor\\PraktischePrufung\\Felder.txt", "#");
+            List<Felder> listeFelder = repo.readFromFile(("C:\\Users\\User\\Desktop\\MAP\\Labor\\PraktischePrufung\\Felder.txt", ",");
 
             //System.out.println(service.sortListeTiereByName(listeTiere));
             //System.out.println(service.filterListeByDiaet(listeTiere, Diaet.carnivore));
