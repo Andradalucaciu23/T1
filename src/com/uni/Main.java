@@ -17,8 +17,7 @@ public class Main {
         try {
             List<Felder> listeFelder = repo.readFromFile(("C:\\Users\\User\\Desktop\\MAP\\Labor\\PraktischePrufung\\Felder.txt", ",");
 
-            //System.out.println(service.sortListeTiereByName(listeTiere));
-            //System.out.println(service.filterListeByDiaet(listeTiere, Diaet.carnivore));
+
 
             repo.writeToFile("C:\\Users\\User\\Desktop\\MAP\\Labor\\PraktischePrufung\\Statistik.txt", listeFelder, ",");
             service.getMostFrequentPlace(listeFelder);
